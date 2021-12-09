@@ -1,15 +1,11 @@
 <template>
-    <v-app-bar class="navigation" density="compact">
-      <v-app-bar-title>ww.Pets</v-app-bar-title>
-  
-     
-      <v-spacer></v-spacer>
+ 
       <v-btn text>
-      <router-link to="/">Home</router-link> 
+        <router-link to="/">Home</router-link> 
       </v-btn>
       |
       <v-btn text>
-      <router-link to="/about">About</router-link>
+        <router-link to="/about">About</router-link>
       </v-btn>
    <!-- 
       <v-btn text>Developer</v-btn>
@@ -26,13 +22,12 @@
         <span>Login</span>
       </v-btn>
      
-    </v-app-bar>
 </template>
 
 
 <script lang="ts">
-
 export default {
-  name: 'navigation-bar'
+  name: 'Navigation'
 }
+
 </script>

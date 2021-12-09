@@ -1,14 +1,24 @@
 <template>
-  <navigation />
-  <router-view />
+  <v-app>
+    <v-app-bar density="compact">
+      <v-app-bar-title>ww.Pets</v-app-bar-title>     
+      <v-spacer></v-spacer>
+      <Navigation /> 
+    </v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
 import Navigation from "./views/shared/Navigation.vue";
 
 export default {
   name: 'App',
+  components: {
+    Navigation
+  }
 }
 </script>
 
